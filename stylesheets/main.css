@@ -1,0 +1,81 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* -- A declaração display: block faz com que os elementos HTML sejam tratados como um bloco que contém um espaço em branco tanto em cima como em baixo. Não permite outros elementos HTML ao lado destes. -- */
+header, nav, aside, footer, section, article, hgroup, figure, p, form { 
+	display:block; 
+	border: solid 1px #CCC;
+	margin: 5px;
+	padding: 5px;
+}
+
+body{
+	margin: 0 auto;
+	width: 1024px;
+	/*background-image:url(../images/bg_body.jpg);*/
+	font-family:"Gill Sans MT";
+	font-size:0.9em;
+}
+
+/* -- folhas de estilo relativas ao cabeçalho -- */
+header{
+	height:25px;
+	padding-left:30px;
+}
+
+/* -- folhas de estilo relativas à navegação -- */
+nav ul li{
+	list-style: none;
+	display: inline;
+}
+
+/* -- folhas de estilo relativas à secção relativa aos artigos -- */
+section{
+	height: 600px;
+	width: 1002px;
+}
+
+/* -- folhas de estilo relativas ao artigo definido -- */
+article{
+	width: 700px;
+	float: left;
+	height: 580px;
+}
+
+article hgroup {
+	width: 680px;	
+}
+
+article p {
+	width: 680px;
+	height: 520px;	
+}
+
+/* -- folhas de estilo relativas às redes sociais -- */
+aside {
+	width: 256px;
+	height: 580px;	
+	float: right;
+}
+
+/* -- folhas de estilo relativas ao hgroup -- */
+hgroup {
+	text-decoration:underline;
+}
+
+/* -- folhas de estilo relativas ao rodapé -- */
+footer {
+	font-size: 0.8em;
+	clear: both;
+	text-align: center;	
+}
+
+/* -- formulário -- */
+[type="text"], [type="submit"], select {
+	font-family:"Gill Sans MT";
+}
+
+:required {
+	border-color: #88a;
+	-webkit-box-shadow: 0 0 3px rgba(0, 0, 255, .5);
+}
